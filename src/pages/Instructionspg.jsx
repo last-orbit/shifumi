@@ -33,7 +33,6 @@ const Instructionspg = () => {
               </p>
             </div>
             {/* Scissors Card */}
-
             <div className='bg-gray-300 rounded-xl shadow-xl p-4 w-full md:w-72 sm:w-64 text-center'>
               <img
                 className='h-24 m-auto rotate-180'
@@ -46,7 +45,6 @@ const Instructionspg = () => {
               </p>
             </div>
             {/* Paper Card */}
-
             <div className='bg-gray-300 rounded-xl shadow-xl p-4 w-full md:w-72 sm:w-64 text-center'>
               <img
                 className='h-18 m-auto rotate-5'

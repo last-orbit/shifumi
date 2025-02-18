@@ -17,7 +17,7 @@ const Gamepg = () => {
   const [result, setResult] = useState('');
   const [gameOver, setGameOver] = useState(false);
 
-  // Funcctions
+  // Functions
 
   const handleUserChoice = (choice) => {
     setUserChoice(choice);
@@ -117,7 +117,7 @@ const Gamepg = () => {
               Score : {score}
             </h2>
           </div>
-          {/* Here is the form Section Include buttons */}
+          {/* Buttons Section */}
           <div className='flex justify-around px-10 m-auto'>
             {/* Rock Button */}
             <button
@@ -161,6 +161,8 @@ const Gamepg = () => {
               <h2 className='mt-6 text-center text-black'>Choose Paper</h2>
             </button>
           </div>
+          {/* Results Section */}
+
           <div className='flex-column justify-center py-6 m-auto text-sm leading-10'>
             <p className='font-game'>You chose: {userChoice}</p>
             <p className='font-game'>Computer chose: {computerChoice}</p>
