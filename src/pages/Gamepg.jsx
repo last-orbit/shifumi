@@ -81,14 +81,14 @@ const Gamepg = () => {
     <>
       {/* Game Over Section */}
       {gameOver ? (
-        <div className='flex justify-center items-center min-h-screen bg-amber-800'>
+        <div className='flex justify-center items-center min-h-screen bg-amber-800 text-amber-200'>
           <div className='font-game p-8 text-lg md:text-xl'>
             <h1 className='text-2xl md:text-4xl'>Game Over!</h1>
             <p>You lost all your lives.</p>
             <p>Your score was {score}</p>
             <p>High Score: {highScore}</p>
             <button
-              className='mt-3 font-bold px-3.5 py-3 bg-[#767676] text-shadow-[-1px_-1px_black,1px_1px_white]  rounded-lg shadow-[0_0.2em_gray] cursor-pointer'
+              className='mt-3 font-bold px-3.5 py-3 text-black text-shadow-[-1px_-1px_black,1px_1px_white]  rounded-lg shadow-[0_0.2em_gray] cursor-pointer bg-gray-300'
               onClick={resetGame}
             >
               Play Again?
@@ -97,8 +97,8 @@ const Gamepg = () => {
         </div>
       ) : (
         // Game Section
-        <div className='min-h-screen bg-amber-800 p-4'>
-          <h1 className='text-xl md:text-3xl py-5 font-game uppercase text-center'>
+        <div className='min-h-screen bg-amber-800 p-4 text-amber-200'>
+          <h1 className='text-xl md:text-3xl py-5 font-game uppercase text-center '>
             Shifumi
           </h1>
           <div className='flex flex-col md:flex-row items-center justify-between px-4'>
@@ -128,7 +128,7 @@ const Gamepg = () => {
               onClick={() => handleUserChoice('rock')}
             >
               <img className='h-20 m-auto mt-3' src={rock} alt='rock icon' />
-              <h2 className='mt-7 text-center'>Choose Rock</h2>
+              <h2 className='mt-7 text-center text-black'>Choose Rock</h2>
             </button>
             {/* Scissors Button */}
             <button
@@ -143,7 +143,7 @@ const Gamepg = () => {
                 src={scissors}
                 alt='scissors logo'
               />
-              <h2 className='mt-6 text-center'>Choose Scissors</h2>
+              <h2 className='mt-6 text-center text-black'>Choose Scissors</h2>
             </button>
             {/* Paper Button */}
             <button
@@ -158,7 +158,7 @@ const Gamepg = () => {
                 src={paper}
                 alt='paper icon'
               />
-              <h2 className='mt-6 text-center'>Choose Paper</h2>
+              <h2 className='mt-6 text-center text-black'>Choose Paper</h2>
             </button>
           </div>
           <div className='flex-column justify-center py-6 m-auto text-sm leading-10'>
