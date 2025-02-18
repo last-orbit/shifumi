@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import 'tailwindcss';
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --font-game: 'Press Start 2P', serif;
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-flash {
+  animation: flash 1s infinite;
+}
+
